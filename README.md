@@ -24,7 +24,7 @@ and the goals I believe I truly deserve to achieve.
 
 ***Languages:-***  C#, C++, .NET,  
 ***Database:-*** Microsoft SQL Server, T-SQL,  
-***Web:-** HTML, CSS, Javascript,
+***Web:-*** HTML, CSS, Javascript,
 ***Desktop Development:-*** Win Forms,  
 ***Frameworks and Libraries:***  React.js, TailwindCSS,  
 
