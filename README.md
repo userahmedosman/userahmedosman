@@ -22,10 +22,10 @@ and the goals I believe I truly deserve to achieve.
 
 ## 🛠 Most Familiar Tech Stack
 
-***Languages:-***  C#, C++, .NET, 
+***Languages:-***  C#, C++, .NET,  
 ***Database:-*** Microsoft SQL Server, T-SQL,  
 ***Web:-** HTML, CSS, Javascript,
-***Desktop Development:-*** Windows & Mac (C#, .NET, C++),  
+***Desktop Development:-*** Win Forms,  
 ***Frameworks and Libraries:***  React.js, TailwindCSS,  
 
 ## 📱 Connect with Me  
