@@ -26,8 +26,7 @@ and the goals I believe I truly deserve to achieve.
 ***Database:-*** Microsoft SQL Server, T-SQL,  
 ***Web:-** HTML, Css, Javascript,
 ***Desktop Development:-*** Windows & Mac (C#, .NET, C++),  
-***Frameworks:***  Next.js, EF,  
-***Libraries:*** React.js, TailwindCSS,  
+***Frameworks and Libraries:***  React.js, TailwindCSS,  
 
 ## 📱 Connect with Me  
 
