@@ -36,14 +36,19 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
-<div style="display:flex;flex-direction:column;flex-wrap:wrap;justify-content:space-between;gap:10px; margin:20px auto; padding:20px; background-color:#000000;">
-<div align="center">
-  <img src="images/tools/loading_algo.gif"/>
-</div>
-<div align="center">
- <img width="600px"src="https://skillicons.dev/icons?i=html,css,js,react,cpp,cs,dotnet,git,tailwind,visualstudio&perline=12"  />
-</div>
-</div>
+
+<table align="center" bgcolor="#000000" cellpadding="25" cellspacing="0" width="100%">
+<tr>
+<td align="center" bgcolor="#000000">
+<img src="images/tools/loading_algo.gif"/>
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#000000">
+<img width="600px" src="https://skillicons.dev/icons?i=html,css,js,react,cpp,cs,dotnet,git,tailwind,visualstudio&perline=12"/>
+</td>
+</tr>
+</table>
 
 ---
 
