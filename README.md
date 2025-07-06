@@ -1,16 +1,13 @@
 <h1 align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Hello%2C+There;This+is+Ahmed+Osman" alt="Typing SVG" /></a>
  </h1>
-<div id="header" align="center" style="display:flex; flex-direction:row; gap:20px; padding:10px; margin:0 auto; justify-content: center;>
-    <img src="images/tools/sonic_programmer.gif" width="300"/>
-    <div>
+<div id="header" align="center" style="display:flex; flex-direction:row; gap:20px; padding:10px; margin:0 auto; justify-content: center;">
+  <div>
       <a href="https://github.com/userahmedosman/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=userahmedosman" />
-</a>
-<a href="https://github.com/userahmedosman/convoychat">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=userahmedosman&layout=compact&langs_count=8&card_width=320" />
-</a>
-    </div>
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=userahmedosman" />     
+      </a>
+ </div>
+    <img src="images/tools/sonic_programmer.gif" width="300"/>
 </div>
 <div id="badges" align ="center"> 
 <a href="https://www.linkedin.com/in/ahmed-osman-hajo">
