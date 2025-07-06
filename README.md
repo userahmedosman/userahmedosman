@@ -36,7 +36,7 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
-<div style="display:flex;flex-direction:column;flex-wrap:wrap;justify-content:space-between;gap:10px; margin:0 auto; padding:20px; background-color:#000000;">
+<div style="display:flex;flex-direction:column;flex-wrap:wrap;justify-content:space-between;gap:10px; margin:20px auto; padding:20px; background-color:#000000;">
 <div align="center">
   <img src="images/tools/loading_algo.gif"/>
 </div>
