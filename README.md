@@ -61,8 +61,8 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 ---
 
 ### :fire: My Stats :
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=userahmedosman&theme=radical&show_icons=true&card_width=200px)](https://git.io/streak-stats)
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=userahmedosman&show_icons=true&theme=radical&card_width=250px)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=userahmedosman&theme=radical&show_icons=true&card_width=400px)](https://git.io/streak-stats)
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=userahmedosman&show_icons=true&theme=radical)
 
 ---
 
