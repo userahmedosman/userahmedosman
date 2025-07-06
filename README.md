@@ -2,12 +2,8 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Hello%2C+There;This+is+Ahmed+Osman" alt="Typing SVG" /></a>
  </h1>
 <div id="header" align="center" style="display: flex; flex-direction: row; gap:20px; padding:10px; margin:0 auto; justify-content: center;">
-  <div>
-      <a href="https://github.com/userahmedosman/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=userahmedosman" />     
-      </a>
- </div>
     <img src="images/tools/sonic_programmer.gif" width="300"/>
+ [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=userahmedosman&layout=compact&theme=algoliaborder_radius=4.6)](https://github.com/userahmedosman/github-readme-stats)
 </div>
 <div id="badges" align ="center"> 
 <a href="https://www.linkedin.com/in/ahmed-osman-hajo">
@@ -58,7 +54,12 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 
 ### :fire: My Stats :
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=userahmedosman&theme=algolia&border_radius=4.6)](https://git.io/streak-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=userahmedosman&layout=compact&theme=algoliaborder_radius=4.6)](https://github.com/userahmedosman/github-readme-stats)
+<div>
+      <a href="https://github.com/userahmedosman/github-readme-stats">
+  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=userahmedosman" />     
+      </a>
+ </div>
+
 
 
 ---
