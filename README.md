@@ -25,7 +25,7 @@
 ### :man_technologist: About Me :
 
 I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> specializing on .NET Technology.
-- 🌱currently digging on   **T-SQL** , **Advanced C#** , **RESTful API** ,  **Asp.Net MVCt** , **ReactJS** ...
+- 🌱currently digging on **SQL-Server** , **T-SQL** , **Advanced C#** , **RESTful API** ,  **Asp.Net MVCt** , **ReactJS** ...
   
 - 👯 I’m looking to collaborate on open source projects
   
@@ -36,11 +36,13 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 ---
 
 ### :hammer_and_wrench: Languages and Tools :
+<div style="display:flex;flex-direction:column;flex-wrap:wrap;justify-content:space-between;gap:10px; margin:0 auto; padding:20px; background-color:#000000;">
 <div align="center">
   <img src="images/tools/loading_algo.gif"/>
 </div>
 <div align="center">
  <img width="600px"src="https://skillicons.dev/icons?i=html,css,js,react,cpp,cs,dotnet,git,tailwind,visualstudio&perline=12"  />
+</div>
 </div>
 
 ---
