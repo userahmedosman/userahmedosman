@@ -2,7 +2,8 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Hello%2C+There;This+is+Ahmed+Osman" alt="Typing SVG" /></a>
  </h1>
 <div id="header" align="center">
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjQwMzMwajl2ZXRnMHVnMjlidndiOHJ5bWN6YjFzOHNhM3VsdThqaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/78XCFBGOlS6keY1Bil/giphy.gif" width="300"/>
+    <img src="images/tools/sonic_programmer.gif" width="300"/>
+
 </div>
 <div id="badges" align ="center"> 
 <a href="https://www.linkedin.com/in/ahmed-osman-hajo">
@@ -36,7 +37,7 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 
 ### :hammer_and_wrench: Languages and Tools :
 <div align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBhdzV1MnE0eG1wNXJ2OXNwcTE4N2EycTg5MzU3aHJxMGNvYXZ6dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KDyxouSEfhOs9i4oru/giphy.gif"/>
+  <img src="images/tools/loading_algo.gif"/>
 </div>
 <div align="center">
  <img width="600px"src="https://skillicons.dev/icons?i=html,css,js,react,cpp,cs,dotnet,git,tailwind,visualstudio&perline=12"  />
