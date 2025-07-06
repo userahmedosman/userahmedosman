@@ -1,15 +1,19 @@
 <h1 align="center">
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Hello%2C+There;This+is+Ahmed+Osman" alt="Typing SVG" /></a>
- </h1>
-<div id="header" align="center" style="display: flex; flex-direction: row; margin:0 auto; justify-content: space-between;">
-  
-  <a href="https://github.com/userahmedosman/github-readme-stats">
-  <img width=200 align="center" src="https://github-readme-stats.vercel.app/api?username=userahmedosman" />     
-  </a>
-    <img src="images/tools/sonic_programmer.gif" width=200/>
-</div>
+</h1>
 
-<div id="badges" align ="center"> 
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center">
+<img src="images/tools/sonic_programmer.gif" width="200" height="200"/>
+</td>
+<td align="center">
+<img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=userahmedosman&layout=compact&langs_count=8&card_width=320&theme=algolia" />
+</td>
+</tr>
+</table>
+
+<div id="badges" align="center">
 <a href="https://www.linkedin.com/in/ahmed-osman-hajo">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/> 
 </a> 
@@ -31,7 +35,7 @@
 I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> specializing on .NET Technology.
 - 🌱currently digging on **SQL-Server** , **T-SQL** , **Advanced C#** , **RESTful API** ,  **Asp.Net MVC** , **ReactJS** ...
   
-- 👯 I’m looking to collaborate on open source projects
+- 👯 I'm looking to collaborate on open source projects
   
 - :zap: In my free time, I solve problems on CodeForce, LeetCode and read tech articles.
 
@@ -58,12 +62,7 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 
 ### :fire: My Stats :
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=userahmedosman&theme=algolia&border_radius=4.6)](https://git.io/streak-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=userahmedosman&layout=compact&theme=algoliaborder_radius=4.6)](https://github.com/userahmedosman/github-readme-stats)
-<div>
-     
- </div>
-
-
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=userahmedosman&show_icons=true&theme=radical)
 
 ---
 
