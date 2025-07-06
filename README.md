@@ -4,9 +4,9 @@
 <div id="header" align="center" style="display: flex; flex-direction: row; margin:0 auto; justify-content: space-between;">
   
   <a href="https://github.com/userahmedosman/github-readme-stats">
-  <img height=200 align="center" src="https://github-readme-stats.vercel.app/api?username=userahmedosman" />     
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=userahmedosman" />     
   </a>
-    <img src="images/tools/sonic_programmer.gif" width="300"/>
+    <img src="images/tools/sonic_programmer.gif"/>
 </div>
 
 <div id="badges" align ="center"> 
