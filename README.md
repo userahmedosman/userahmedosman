@@ -25,7 +25,7 @@
 ### :man_technologist: About Me :
 
 I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> specializing on .NET Technology.
-- 🌱currently digging on **SQL-Server** , **T-SQL** , **Advanced C#** , **RESTful API** ,  **Asp.Net MVCt** , **ReactJS** ...
+- 🌱currently digging on **SQL-Server** , **T-SQL** , **Advanced C#** , **RESTful API** ,  **Asp.Net MVC** , **ReactJS** ...
   
 - 👯 I’m looking to collaborate on open source projects
   
