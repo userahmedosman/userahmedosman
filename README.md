@@ -1,40 +1,56 @@
-## Hi there 👋
-# I'm Ahmed Osman👋
-
-Self-thought software engineer.
+<h1 align="center">
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Hello%2C+There;This+is+Ahmed+Osman" alt="Typing SVG" /></a>
+ </h1>
+<div id="header" align="center">
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjQwMzMwajl2ZXRnMHVnMjlidndiOHJ5bWN6YjFzOHNhM3VsdThqaCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/78XCFBGOlS6keY1Bil/giphy.gif" width="300"/>
+</div>
+<div id="badges" align ="center"> 
+<a href="https://www.linkedin.com/in/ahmed-osman-hajo">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/> 
+</a> 
+<a href="https://github.com/userahmedosman"> 
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
+</a> 
+<a href="mailto:ahmedhaj000@gmail.com"> 
+   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge"/>
+</a> 
+</div>
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=userahmedosman&style=flat-square&color=blue" alt="" align="center"/>
+</div>
 
 ---
 
+### :man_technologist: About Me :
+
+I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> specializing on .NET Technology.
+- 🌱currently digging on   **T-SQL** , **Advanced C#** , **RESTful API** ,  **Asp.Net MVCt** , **ReactJS** ...
+  
+- 👯 I’m looking to collaborate on open source projects
+  
+- :zap: In my free time, I solve problems on CodeForce, LeetCode and read tech articles.
+
+- :mailbox:How to reach me: [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmedhaj000@gmail.com)
+  
 ---
 
-## 🌍 My Journey Into Software Development
+### :hammer_and_wrench: Languages and Tools :
+<div align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDBhdzV1MnE0eG1wNXJ2OXNwcTE4N2EycTg5MzU3aHJxMGNvYXZ6dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/KDyxouSEfhOs9i4oru/giphy.gif"/>
+</div>
+<div align="center">
+ <img width="600px"src="https://skillicons.dev/icons?i=html,css,js,react,cpp,cs,dotnet,git,tailwind,visualstudio&perline=12"  />
+</div>
 
-I am a passionate software engineer and developer, energized every moment to learn new things  
-and innovate impactful solutions that contribute to a better world .  
-My journey into the world of technology—and the software industry in particular—began when  
-I was a young teenager with limited resources and minimal knowledge, but with a strong will and unshakable belief .  
-Along the way, I faced many challenges that cost me valuable time and often slowed my progress.  
-Due to limited access to up-to-date learning and research resources,  
-I evolved slowly and found myself lost down many wrong paths.  
-But today, despite countless obstacles and growing responsibilities,  
-I continue moving forward with determination toward the dreams I’ve always held  
-and the goals I believe I truly deserve to achieve.  
+---
 
-## 🛠 Most Familiar Tech Stack
+### :fire: My Stats :
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=userahmedosman&theme=algolia&border_radius=4.6)](https://git.io/streak-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=userahmedosman&layout=compact&theme=algolia)](https://github.com/anuraghazra/github-readme-stats)
 
-***Languages:-***  C#, C++, .NET,  
-***Database:-*** Microsoft SQL Server, T-SQL,  
-***Web:-*** HTML, CSS, Javascript,  
-***Desktop Development:-*** Win Forms,  
-***Frameworks and Libraries:***  React.js, TailwindCSS,  
 
-## 📱 Connect with Me  
+---
 
-[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/el.faqih.haraki)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=black)](https://www.linkedin.com/in/ahmed-osman-hajo)
-
-[![Twitter](https://img.shields.io/badge/X-FFFFFF?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/hajoosman1920)
-
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmedhaj000@gmail.com)
+### 🏆 My Trophies :
+![](https://github-profile-trophy.vercel.app/?username=userahmedosman&theme=algolia&no-frame=false&no-bg=true&margin-w=4&column=-1)
 
