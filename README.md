@@ -8,7 +8,7 @@
 <img src="images/tools/sonic_programmer.gif" width="200" height="200"/>
 </td>
 <td align="center">
-<img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=userahmedosman&layout=compact&langs_count=8&card_width=320&theme=algolia" />
+<img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=userahmedosman&layout=compact&langs_count=8&card_width=350&theme=algolia" />
 </td>
 </tr>
 </table>
@@ -61,7 +61,7 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 ---
 
 ### :fire: My Stats :
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=userahmedosman&theme=radical&show_icons=true&card_width=400px)](https://git.io/streak-stats)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=userahmedosman&theme=radical&show_icons=true&card_width=350px)](https://git.io/streak-stats)
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=userahmedosman&show_icons=true&theme=radical)
 
 ---
