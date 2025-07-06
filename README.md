@@ -3,8 +3,8 @@
  </h1>
 <div id="header" align="center" style="display: flex; flex-direction: row; gap:20px; padding:10px; margin:0 auto; justify-content: center;">
     <img src="images/tools/sonic_programmer.gif" width="300"/>
- [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=userahmedosman&layout=compact&theme=algoliaborder_radius=4.6)](https://github.com/userahmedosman/github-readme-stats)
 </div>
+ [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=userahmedosman&layout=compact&theme=algoliaborder_radius=4.6)](https://github.com/userahmedosman/github-readme-stats)
 <div id="badges" align ="center"> 
 <a href="https://www.linkedin.com/in/ahmed-osman-hajo">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/> 
