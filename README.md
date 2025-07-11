@@ -17,9 +17,6 @@
 <a href="https://www.linkedin.com/in/ahmed-osman-hajo">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/> 
 </a> 
-<a href="https://github.com/userahmedosman"> 
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
-</a> 
 <a href="mailto:ahmedhaj000@gmail.com"> 
    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Badge"/>
 </a> 
