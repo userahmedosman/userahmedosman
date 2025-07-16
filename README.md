@@ -12,7 +12,13 @@
 </td>
 </tr>
 </table>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph.svg">
+</picture>
 
+###
 <div id="badges" align="center">
 <a href="https://www.linkedin.com/in/ahmed-osman-hajo">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/> 
@@ -65,6 +71,4 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 
 ### 🏆 My Trophies :
 ![](https://github-profile-trophy.vercel.app/?username=userahmedosman&theme=algolia&no-frame=false&no-bg=true&margin-w=4&column=-1)
- <p align="left">
-    <img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg">
- </p>
+
