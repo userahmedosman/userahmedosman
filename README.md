@@ -40,7 +40,7 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
   
 - 👯 I'm looking to collaborate on open source projects
   
-- :zap: In my free time, I solve problems on CodeForce, LeetCode and read tech articles.
+- :zap: In my free time, I solve problems on CodeWars, LeetCode and read tech articles.
 
 - :mailbox:How to reach me: [![Gmail Badge](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ahmedhaj000@gmail.com)
   
