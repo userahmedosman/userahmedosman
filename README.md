@@ -8,7 +8,9 @@
 <img src="images/tools/sonic_programmer.gif" width="200" height="200"/>
 </td>
 <td align="center">
-<img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=userahmedosman&layout=compact&langs_count=8&card_width=350&theme=algolia" />
+<img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=userahmedosman&layout=compact&langs_count=12&card_width=350&theme=algolia" />
+<img height="50" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux Logo" />
+
 </td>
 </tr>
 </table>
