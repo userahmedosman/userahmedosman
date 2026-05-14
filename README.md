@@ -1,19 +1,7 @@
 <h1 align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&width=435&lines=Hello%2C+There;This+is+Ahmed+Osman" alt="Typing SVG" /></a>
+Ahmed Osman
 </h1>
 
-<table align="center" border="0" cellspacing="0" cellpadding="0">
-<tr>
-<td align="center">
-<img src="images/tools/sonic_programmer.gif" width="200" height="200"/>
-</td>
-<td align="center">
-<img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=userahmedosman&layout=compact&langs_count=12&card_width=350&theme=algolia" />
-<img height="50" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux Logo" />
-
-</td>
-</tr>
-</table>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph.svg">
@@ -39,7 +27,7 @@
 
 I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> specializing on .NET Technology.
 - 🌱currently digging on **SQL-Server** , **T-SQL** , **Advanced C#** , **RESTful API** , **Clean Architecture** ,**Modular Monolith**, **Microservices**,
-- **AWS/Azure Cloud Service**, **Optimization & Scaling**,  **Pragmatic Asp.Net Core (MVC/Web Api)** , **ReactJS**, **Next.js**, **Linux Shell Scripting** ...
+- **AWS/Azure Cloud Service**, **Docker and Kubernetes**, **Optimization & Scaling**,  **Pragmatic Asp.Net Core (MVC/Web Api)** , **ReactJS**, **Next.js**, **Linux Shell Scripting** ...
   
 - 👯 I'm looking to collaborate on open source projects
   
@@ -51,18 +39,6 @@ I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmT
 
 ### :hammer_and_wrench: Languages and Tools :
 
-<table align="center" bgcolor="#000000" cellpadding="25" cellspacing="0" width="100%">
-<tr>
-<td align="center" bgcolor="#000000">
-<img src="images/tools/loading_algo.gif"/>
-</td>
-</tr>
-<tr>
-<td align="center" bgcolor="#000000">
-<img width="600px" src="https://skillicons.dev/icons?i=html,css,js,react,cpp,cs,dotnet,git,tailwind,visualstudio&perline=12"/>
-</td>
-</tr>
-</table>
 
 ---
 
