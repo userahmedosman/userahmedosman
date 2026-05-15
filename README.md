@@ -26,8 +26,9 @@ Ahmed Osman
 ### :man_technologist: About Me :
 
 I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> specializing on .NET Technology.
-- 🌱currently digging on **SQL-Server** , **T-SQL** , **Advanced C#** , **RESTful API**, **Advanced Observablitiy and Monitoring tools**,
-- **Optimization & Scaling**,  **Pragmatic Asp.Net Core (MVC/Web Api)** , **ReactJS**, **Next.js**,
+- 🌱currently digging on **SQL-Server** , **T-SQL** , **Advanced C#** , **RESTful API**,
+- **Pragmatic Asp.Net Core (MVC/Web Api)**, **ReactJS**, **Next.js**,
+- **Advanced Observablitiy and Monitoring tools**, **Optimization & Scaling**,
 - **Clean Architecture** ,**Modular Monolith**, **Microservices**, **SignalIR**, **RabbitMQ**, **Kafka**,
 - **AWS/Azure Cloud Service**, **Docker and Kubernetes**, **Linux Shell Scripting** ...
   
