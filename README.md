@@ -28,9 +28,10 @@ Ahmed Osman
 
 ### :man_technologist: About Me :
 
-I am a FullStack Developer <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> specializing on .NET Ecosystem and DevOps.
 
-### 👌 I have built various project using ...
+I am a FullStack Developer specializing on **.NET** Ecosystem and DevOps.
+
+ <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50"> I have built various project using ...
 
 - **C++**, **C#**, **.NET framework**, **WinForms**, **SQL-Server**, **ADO.NET**, **T-SQL**, 
 - **Pragmatic Asp.Net Core (MVC/Web Api)**, **EF Core**, **N-tire Acrchitecture**, **Clean Architecture**,
