@@ -1,5 +1,5 @@
 <h1 align="center">
-Ahmed Osman
+Building something great....
 </h1>
 
 <picture>
@@ -44,3 +44,10 @@ I am a FullStack Developer specializing on **.NET** Ecosystem and DevOps.
 👯 I'm looking to collaborate on open source projects
   
 :zap: In my free time, I try to solve some problems on *CodeWars*, *LeetCode* and reading latest tech articles.
+
+
+<h4 align="center">
+Building something great requires the will of yesterday<br>
+The commitment and self-discipline of today<br>
+The hope and perseverance of tomorrow.
+</h4>
