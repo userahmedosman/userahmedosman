@@ -34,7 +34,7 @@ I am a FullStack Developer specializing on **.NET** Ecosystem and DevOps.
  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50"> I have built various project using ...
 
 - **C++**, **C#**, **.NET framework**, **WinForms**, **SQL-Server**, **ADO.NET**, **T-SQL**, 
-- **Pragmatic Asp.Net Core (MVC/Web Api)**, **EF Core**, **N-tire Acrchitecture**, **Clean Architecture**,
+- **Asp.Net Core (MVC/Web Api)**, **EF Core**, **N-tire Acrchitecture**, **Clean Architecture**,
 - **HTMl**, **CSS**, **JS**, **TailwindCSS**, **ReactJS**, **Next.js**,
 ### 🌱 Currently digging on ...
 - **Advanced Observablitiy and Monitoring tools**, **Optimization & Scaling**,
