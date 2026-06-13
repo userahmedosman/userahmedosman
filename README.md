@@ -38,7 +38,7 @@ I am a FullStack Developer specializing on **.NET** Ecosystem and DevOps.
 - **HTMl**, **CSS**, **JS**, **TailwindCSS**, **ReactJS**, **Next.js**,
 ### 🌱 Currently digging on ...
 - **Advanced Observablitiy and Monitoring tools**, **Optimization & Scaling**,
-- **Modular Monolith**, **Redis Caching**, **Microservices**, **SignalIR**, **RabbitMQ**, **Kafka**,
+- **Modular Monolith**, **Redis Caching**, **Microservices**, **SignalIR**, **RabbitMQ**, **Neo4j**, **Kafka**,
 - **AWS/Azure Cloud Service**, **Github Actions**, **Docker and Kubernetes**, **Linux Shell Scripting** ...
   
 👯 I'm looking to collaborate on open source projects
