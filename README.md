@@ -41,10 +41,10 @@ I am a FullStack Developer specializing on **.NET** Ecosystem and DevOps.
 - **Modular Monolith**, **Redis Caching**, **Microservices**, **SignalIR**, **RabbitMQ**, **Neo4j**, **Kafka**,
 - **AWS/Azure Cloud Service**, **Github Actions**, **Docker and Kubernetes**, **Linux Shell Scripting** ...
 
-###  Future plans and hot cruiosity...
-- I have a strong interest in the modern programming language **RUST**, from understanding its fundamentals to building high-performance and secure systems.
-- Understanding and becoming proficient in the **GoLang** programming language seems essential, as it is widely used in cloud computing.
-- 
+### 🐦‍🔥 Future plans and💥cruiosity...
+- I have a strong interest in **RUST ⚡**, from understanding its fundamentals to building high-performance and secure systems.
+- Understanding and becoming proficient with **GoLang 🔵** seems important, as it is widely getting adopted in cloud computing.
+
 👯 I'm looking to collaborate on open source projects
   
 :zap: In my free time, I try to solve some problems on *CodeWars*, *LeetCode* and reading latest tech articles.
