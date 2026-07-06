@@ -35,10 +35,10 @@ I am a FullStack Developer specializing on **.NET** Ecosystem and DevOps.
 
 - **C++**, **C#**, **.NET framework**, **WinForms**, **SQL-Server**, **ADO.NET**, **T-SQL**, 
 - **Asp.Net Core (MVC/Web Api)**, **EF Core**, **N-tire Acrchitecture**, **Clean Architecture**,
-- **HTMl**, **CSS**, **JS**, **TailwindCSS**, **ReactJS**, **Next.js**,
+- **HTMl**, **CSS**, **JS**, **TypeScript**, **TailwindCSS**, **ReactJS**, **Next.js**,
 ### 🌱 Currently digging on ...
 - **Advanced Observablitiy and Monitoring tools**, **Optimization & Scaling**,
-- **Modular Monolith**, **Redis Caching**, **Microservices**, **SignalIR**, **RabbitMQ**, **Neo4j**, **Kafka**,
+- **Modular Monolith**, **Redis Caching**, **Microservices**, **SignalIR**, **RabbitMQ**, **Neo4j**, **MongoDB**, **Kafka**,
 - **AWS/Azure Cloud Service**, **Github Actions**, **Docker and Kubernetes**, **Linux Shell Scripting** ...
 
 ### 🐦‍🔥 Future plans💥...
