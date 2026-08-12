@@ -29,21 +29,22 @@ Building something great....
 ### :man_technologist: About Me :
 
 
-I am a FullStack Developer specializing on **.NET** Ecosystem and DevOps.
+I am a Full Stack Developer specializing on **.NET** Ecosystem and DevOps.
 
  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50"> I have built various project using ...
 
 - **C++**, **C#**, **.NET framework**, **WinForms**, **SQL-Server**, **ADO.NET**, **T-SQL**, 
-- **Asp.Net Core (MVC/Web Api)**, **EF Core**, **N-tire Acrchitecture**, **Clean Architecture**,
-- **HTMl**, **CSS**, **JS**, **TypeScript**, **TailwindCSS**, **ReactJS**, **Next.js**,
-### 🌱 Currently digging on ...
-- **Advanced Observablitiy and Monitoring tools**, **Optimization & Scaling**,
-- **Modular Monolith**, **Redis Caching**, **Microservices**, **SignalIR**, **RabbitMQ**, **Neo4j**, **MongoDB**, **Kafka**,
-- **AWS/Azure Cloud Service**, **Github Actions**, **Docker and Kubernetes**, **Linux Shell Scripting** ...
+- **ASP. Net Core (MVC/Web Api)**, **EF Core**, **N-tire Architecture**, **Clean Architecture**,
+- **HTML**, **CSS**, **JS**, **TypeScript**, **Tailwind CSS**, **ReactJS**, **Next.js**,
+### 🌱 Soon ...
+- **Advanced Observability and Monitoring tools**, **Optimization & Scaling**,
+- **Modular Monolith**, **Redis Caching**, **Microservices**, **Signal IR**, **RabbitMQ**, **Neo4j**, **MongoDB**, **Kafka**,
+- **AWS/Azure Cloud Service**, **GitHub Actions**, **Docker and Kubernetes**, **Linux Shell Scripting**
+- **AI integration**, **RAG integration** ...
 
-### 🐦‍🔥 Future plans💥...
-- I have a strong interest on **RUST :crab:**, for building high-performance ⚡ and secure systems.
-- Understanding **GoLang 🔵** seems important, as it is widely getting adopted in cloud computing.
+### 🐦‍🔥 Side learning💥...
+-  **RUST :crab:**, I have already got hand with rust and refining its unique concept
+-  **Golang 🔵** Soon ..
 
 👯 I'm looking to collaborate on open source projects
   
