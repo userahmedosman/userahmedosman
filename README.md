@@ -40,10 +40,11 @@ I am a Full Stack Developer specializing on **.NET** Ecosystem and DevOps.
 - **Advanced Observability and Monitoring tools**, **Optimization & Scaling**,
 - **Modular Monolith**, **Redis Caching**, **Microservices**, **Signal IR**, **RabbitMQ**, **Neo4j**, **MongoDB**, **Kafka**,
 - **AWS/Azure Cloud Service**, **GitHub Actions**, **Docker and Kubernetes**, **Linux Shell Scripting**
-- **AI integration**, **RAG integration** ...
+- **Native AOT**, **AI orchestration with Semantic Kernel**, **Zero-Trust security practices**
+
 
 ### 🐦‍🔥 Side learning💥...
--  **RUST :crab:**, I have already got hand with rust and refining its unique concept
+-  I have already got hand with **RUST :crab:**
 -  **Golang 🔵** Soon ..
 
 👯 I'm looking to collaborate on open source projects
