@@ -53,7 +53,5 @@ I am a Full Stack Developer specializing on **.NET** Ecosystem and DevOps.
 
 
 <h4 align="center">
-Building something great requires the will of yesterday<br>
-The commitment and self-discipline of today<br>
-The hope and perseverance of tomorrow.
+✨ Progress beats delay. <br>Action beats intention. <br>One step today beats ten plans tomorrow. 🚀
 </h4>
