@@ -24,7 +24,8 @@ Building something great....
   <img src="https://komarev.com/ghpvc/?username=userahmedosman&style=flat-square&color=blue" alt="" align="center"/>
 </div>
 
-[![Flag Counter](https://s01.flagcounter.com/count2/XXXX/bg=FFFFFF/txt=000000/border=CCCCCC/columns=2/maxflags=12/viewers=0/labels=1/pageviews=1/flags=0)](https://info.flagcounter.com/XXXX)
+[![Flag Counter](https://s01.flagcounter.com/countxl/bswM/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_250/viewers_0/labels_0/pageviews_1/flags_0/percent_0/)](https://info.flagcounter.com/bswM)
+
 
 
 ---
