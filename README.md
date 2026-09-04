@@ -1,9 +1,6 @@
 <h1 align="center">
 Building something great....
 </h1>
-
-[![Flag Counter](https://s01.flagcounter.com/countxl/bswM/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_250/viewers_0/labels_0/pageviews_1/flags_0/percent_0/)](https://info.flagcounter.com/bswM)
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph.svg">
@@ -26,13 +23,9 @@ Building something great....
   <img src="https://komarev.com/ghpvc/?username=userahmedosman&style=flat-square&color=blue" alt="" align="center"/>
 </div>
 
-
-
-
 ---
 
 ### :man_technologist: About Me :
-
 
 I am a Full Stack Developer specializing on **.NET** Ecosystem and DevOps.
 
@@ -60,3 +53,5 @@ I am a Full Stack Developer specializing on **.NET** Ecosystem and DevOps.
 <h4 align="center">
 ✨ Progress beats delay. <br>Action beats intention. <br>One step today beats ten plans tomorrow. 🚀
 </h4>
+
+[![Flag Counter](https://s01.flagcounter.com/countxl/bswM/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_250/viewers_0/labels_0/pageviews_1/flags_0/percent_0/)](https://info.flagcounter.com/bswM)
