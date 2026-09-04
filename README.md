@@ -1,6 +1,7 @@
 <h1 align="center">
 Building something great....
 </h1>
+[![Flag Counter](https://s01.flagcounter.com/countxl/bswM/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_250/viewers_0/labels_0/pageviews_1/flags_0/percent_0/)](https://info.flagcounter.com/bswM)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph-dark.svg">
@@ -24,7 +25,6 @@ Building something great....
   <img src="https://komarev.com/ghpvc/?username=userahmedosman&style=flat-square&color=blue" alt="" align="center"/>
 </div>
 
-[![Flag Counter](https://s01.flagcounter.com/countxl/bswM/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_250/viewers_0/labels_0/pageviews_1/flags_0/percent_0/)](https://info.flagcounter.com/bswM)
 
 
 
