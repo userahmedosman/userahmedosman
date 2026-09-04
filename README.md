@@ -31,9 +31,17 @@ I am a Full Stack Developer specializing on **.NET** Ecosystem and DevOps.
 
  <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50"> I have built various project using ...
 
-- **C++**, **C#**, **.NET framework**, **WinForms**, **SQL-Server**, **ADO.NET**, **T-SQL**, 
-- **ASP. Net Core (MVC/Web Api)**, **EF Core**, **N-tire Architecture**, **Clean Architecture**,
-- **HTML**, **CSS**, **JS**, **TypeScript**, **Tailwind CSS**, **ReactJS**, **Next.js**,
+### 🛠️ Skills Overview
+
+| **Category**              | **Technologies** |
+|----------------------------|------------------|
+| **💻 Programming Languages** | ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white) |
+| **🎨 Frontend**            | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+| **⚙️ Frameworks**          | ![ASP.NET Core](https://img.shields.io/badge/ASP.NET%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) ![Entity Framework](https://img.shields.io/badge/Entity%20Framework-512BD4?style=for-the-badge&logo=dotnet&logoColor=white) |
+| **🧰 Tools**               | ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white) |
+| **🗄️ Databases**           | ![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white) |
+
+
 ### 🌱 Soon ...
 - **Advanced Observability and Monitoring tools**, **Optimization & Scaling**,
 - **Modular Monolith**, **Redis Caching**, **Microservices**, **Signal IR**, **RabbitMQ**, **Neo4j**, **MongoDB**, **Kafka**,
