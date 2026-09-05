@@ -1,5 +1,5 @@
 <h1 align="center">
-Building something great....
+Building something great....<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50">
 </h1>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/userahmedosman/userahmedosman/output/pacman-contribution-graph-dark.svg">
@@ -27,11 +27,10 @@ Building something great....
 
 ### :man_technologist: About Me :
 
-I am a Full Stack Developer specializing on **.NET** Ecosystem and DevOps.
+I am a Full Stack Developer specializing on **.NET**, **System Design**, **Cloud Infrastructure** and **DevOps**.
 
- <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="50"> I have built various project using ...
 
-### 🛠️ Skills Overview
+### 🛠️ My Skills
 
 | **Category**              | **Technologies** |
 |----------------------------|------------------|
