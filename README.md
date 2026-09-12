@@ -30,7 +30,7 @@ Building something great....<img src="https://media.giphy.com/media/WUlplcMpOCEm
 I am a Full Stack Developer specializing on **.NET**, **System Design**, **Cloud Infrastructure** and **DevOps**.
 
 
-### 🛠️ Stacks I have worked recently 
+### 🛠️ Stacks I'm familiar with
 
 | **Category**              | **Technologies** |
 |----------------------------|------------------|
