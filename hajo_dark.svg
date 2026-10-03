@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="530px" font-size="16px" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="570px" font-size="16px" role="img">
 <style>@font-face{src:local('Consolas'),local('Consolas Bold');font-family:ConsolasFallback;font-display:swap;-webkit-size-adjust:109%;size-adjust:109%;}.key{fill:#ffa657}.value{fill:#a5d6ff}.addColor{fill:#3fb950}.delColor{fill:#f85149}.cc{fill:#616e7f}text,tspan{white-space:pre}</style>
-<rect width="985px" height="530px" fill="#161b22" rx="15"/>
+<rect width="985px" height="570px" fill="#161b22" rx="15"/>
 <text x="15" y="30" fill="#c9d1d9" class="ascii">
 <tspan x="15" y="30">             ::   :.</tspan>
 <tspan x="15" y="46">          -++@@@@@@#=:==:</tspan>
@@ -56,8 +56,9 @@
 <tspan x="390" y="390"><tspan class="cc">. </tspan><tspan class="key">OpenSource</tspan>:<tspan class="cc"> ......................... </tspan><tspan class="value">Open to collaboration</tspan></tspan>
 <tspan x="390" y="410"><tspan class="cc">. </tspan><tspan class="key">Motto</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">Progress beats delay.</tspan></tspan>
 <tspan x="390" y="450">- GitHub Stats -———————————————————————————————————————————-—-</tspan>
-<tspan x="390" y="470"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value" id="repo_data">42</tspan> | <tspan class="key">Stars</tspan>:<tspan class="cc"> .............. </tspan><tspan class="value" id="star_data">15</tspan></tspan>
-<tspan x="390" y="490"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value" id="follower_data">48</tspan> | <tspan class="key">Following</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">50</tspan></tspan>
-<tspan x="390" y="510"><tspan class="cc">. </tspan><tspan class="key">Contrib</tspan>:<tspan class="cc"> .......................... </tspan><tspan class="value" id="contrib_data">0</tspan> | <tspan class="key">LOC</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value" id="loc_data">0</tspan></tspan>
-<tspan x="390" y="530"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value" id="commit_data">0</tspan> | <tspan class="key">Learning</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">Observability, Scaling, Microservices</tspan></tspan>
+<tspan x="390" y="470"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc" id="repo_data_dots"> .............................. </tspan><tspan class="value" id="repo_data">42</tspan> | <tspan class="key">Stars</tspan>:<tspan class="cc" id="star_data_dots"> .............. </tspan><tspan class="value" id="star_data">15</tspan></tspan>
+<tspan x="390" y="490"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc" id="follower_data_dots"> ........................ </tspan><tspan class="value" id="follower_data">48</tspan> | <tspan class="key">Following</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">50</tspan></tspan>
+<tspan x="390" y="510"><tspan class="cc">. </tspan><tspan class="key">Contrib</tspan>:<tspan class="cc" id="contrib_data_dots"> .......................... </tspan><tspan class="value" id="contrib_data">0</tspan> | <tspan class="key">LOC</tspan>:<tspan class="cc" id="loc_data_dots"> ............... </tspan><tspan class="value" id="loc_data">0</tspan></tspan>
+<tspan x="390" y="530"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>:<tspan class="cc" id="commit_data_dots"> ........................... </tspan><tspan class="value" id="commit_data">0</tspan> | <tspan class="key">Learning</tspan>:<tspan class="cc"> ............. </tspan><tspan class="value">Observability, Scaling, Microservices</tspan></tspan>
+<tspan x="390" y="550"><tspan class="cc">. </tspan><tspan class="key">LOC Added</tspan>: <tspan class="cc" id="loc_add_dots"></tspan><tspan class="value" id="loc_add">0</tspan> | <tspan class="key">LOC Deleted</tspan>:<tspan class="cc" id="loc_del_dots"> ....... </tspan><tspan class="value" id="loc_del">0</tspan></tspan>
 </text></svg>
