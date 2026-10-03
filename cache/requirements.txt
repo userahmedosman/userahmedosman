@@ -1,5 +1,2 @@
-dateutil
-hashlib
-warnings
-xml.etree.ElementTree
-datetime
+python-dateutil
+requests
