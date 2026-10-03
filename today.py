@@ -5,14 +5,24 @@ import os
 import xml.etree.ElementTree as etree
 import time
 import hashlib
+import warnings
 
 # Fine-grained personal access token with All Repositories access:
 # Account permissions: read:Followers, read:Starring, read:Watching
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
 
-HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
-GITHUB_USERNAME = os.environ['GITHUB_USERNAME'] # 'userahmedosman'
+def required_environment_variable(name):
+    value = os.getenv(name)
+    if not value:
+        raise RuntimeError(f"Required environment variable '{name}' is not set.")
+    return value
+
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_DIR = os.path.join(SCRIPT_DIR, 'cache')
+HEADERS = {'authorization': 'token ' + required_environment_variable('ACCESS_TOKEN')}
+GITHUB_USERNAME = required_environment_variable('GITHUB_USERNAME') # 'userahmedosman'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
@@ -222,7 +232,8 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     If it has, run recursive_loc on that repository to update the LOC count
     """
     cached = True # Assume all repositories are cached
-    filename = 'cache/'+hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest()+'.txt' # Create a unique filename for each user
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    filename = os.path.join(CACHE_DIR, hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest() + '.txt') # Create a unique filename for each user
     try:
         with open(filename, 'r') as f:
             data = f.readlines()
@@ -282,8 +293,17 @@ def add_archive():
     Several repositories I have contributed to have since been deleted.
     This function adds them using their last known data
     """
-    with open('cache/repository_archive.txt', 'r') as f:
-        data = f.readlines()
+    filename = os.path.join(CACHE_DIR, 'repository_archive.txt')
+    try:
+        with open(filename, 'r') as f:
+            data = f.readlines()
+    except FileNotFoundError:
+        warnings.warn(
+            'cache/repository_archive.txt is missing; archived repository totals will be omitted.',
+            RuntimeWarning,
+            stacklevel=2,
+        )
+        return [0, 0, 0, 0, 0]
     old_data = data
     data = data[7:len(data)-3] # remove the comment block    
     added_loc, deleted_loc, added_commits = 0, 0, 0
@@ -301,7 +321,7 @@ def force_close_file(data, cache_comment):
     Forces the file to close, preserving whatever data was written to it
     This is needed because if this function is called, the program would've crashed before the file is properly saved and closed
     """
-    filename = 'cache/'+hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest()+'.txt'
+    filename = os.path.join(CACHE_DIR, hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest() + '.txt')
     with open(filename, 'w') as f:
         f.writelines(cache_comment)
         f.writelines(data)
@@ -365,7 +385,7 @@ def commit_counter(comment_size):
     Counts up my total commits, using the cache file created by cache_builder.
     """
     total_commits = 0
-    filename = 'cache/'+hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest()+'.txt' # Use the same filename as cache_builder
+    filename = os.path.join(CACHE_DIR, hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest() + '.txt') # Use the same filename as cache_builder
     with open(filename, 'r') as f:
         data = f.readlines()
     cache_comment = data[:comment_size] # save the comment block
@@ -468,8 +488,8 @@ if __name__ == '__main__':
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
 
-    svg_overwrite('hajo_dark.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
-    svg_overwrite('hajo_light.svg', age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    svg_overwrite(os.path.join(SCRIPT_DIR, 'hajo_dark.svg'), age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    svg_overwrite(os.path.join(SCRIPT_DIR, 'hajo_light.svg'), age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
 
     # move cursor to override 'Calculation times:' with 'Total function time:' and the total function time, then move cursor back
     print('\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F',
