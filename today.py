@@ -22,7 +22,7 @@ def required_environment_variable(name):
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(SCRIPT_DIR, 'cache')
 HEADERS = {'authorization': 'token ' + required_environment_variable('ACCESS_TOKEN')}
-GITHUB_USERNAME = required_environment_variable('GITHUB_USERNAME') # 'userahmedosman'
+USERNAME = required_environment_variable('USERNAME') # 'userahmedosman'
 QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
@@ -76,7 +76,7 @@ def graph_commits(start_date, end_date):
             }
         }
     }'''
-    variables = {'start_date': start_date,'end_date': end_date, 'login': GITHUB_USERNAME}
+    variables = {'start_date': start_date,'end_date': end_date, 'login': USERNAME}
     request = simple_request(graph_commits.__name__, query, variables)
     return int(request.json()['data']['user']['contributionsCollection']['contributionCalendar']['totalContributions'])
 
@@ -108,7 +108,7 @@ def graph_repos_stars(count_type, owner_affiliation, cursor=None, add_loc=0, del
             }
         }
     }'''
-    variables = {'owner_affiliation': owner_affiliation, 'login': GITHUB_USERNAME, 'cursor': cursor}
+    variables = {'owner_affiliation': owner_affiliation, 'login': USERNAME, 'cursor': cursor}
     request = simple_request(graph_repos_stars.__name__, query, variables)
     if request.status_code == 200:
         if count_type == 'repos':
@@ -217,7 +217,7 @@ def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None,
             }
         }
     }'''
-    variables = {'owner_affiliation': owner_affiliation, 'login': GITHUB_USERNAME, 'cursor': cursor}
+    variables = {'owner_affiliation': owner_affiliation, 'login': USERNAME, 'cursor': cursor}
     request = simple_request(loc_query.__name__, query, variables)
     if request.json()['data']['user']['repositories']['pageInfo']['hasNextPage']:   # If repository data has another page
         edges += request.json()['data']['user']['repositories']['edges']            # Add on to the LoC count
@@ -233,7 +233,7 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     """
     cached = True # Assume all repositories are cached
     os.makedirs(CACHE_DIR, exist_ok=True)
-    filename = os.path.join(CACHE_DIR, hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest() + '.txt') # Create a unique filename for each user
+    filename = os.path.join(CACHE_DIR, hashlib.sha256(USERNAME.encode('utf-8')).hexdigest() + '.txt') # Create a unique filename for each user
     try:
         with open(filename, 'r') as f:
             data = f.readlines()
@@ -321,7 +321,7 @@ def force_close_file(data, cache_comment):
     Forces the file to close, preserving whatever data was written to it
     This is needed because if this function is called, the program would've crashed before the file is properly saved and closed
     """
-    filename = os.path.join(CACHE_DIR, hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest() + '.txt')
+    filename = os.path.join(CACHE_DIR, hashlib.sha256(USERNAME.encode('utf-8')).hexdigest() + '.txt')
     with open(filename, 'w') as f:
         f.writelines(cache_comment)
         f.writelines(data)
@@ -385,7 +385,7 @@ def commit_counter(comment_size):
     Counts up my total commits, using the cache file created by cache_builder.
     """
     total_commits = 0
-    filename = os.path.join(CACHE_DIR, hashlib.sha256(GITHUB_USERNAME.encode('utf-8')).hexdigest() + '.txt') # Use the same filename as cache_builder
+    filename = os.path.join(CACHE_DIR, hashlib.sha256(USERNAME.encode('utf-8')).hexdigest() + '.txt') # Use the same filename as cache_builder
     with open(filename, 'r') as f:
         data = f.readlines()
     cache_comment = data[:comment_size] # save the comment block
@@ -465,7 +465,7 @@ if __name__ == '__main__':
     print('Calculation times:')
     # define global variable for owner ID and calculate user's creation date
     # e.g {'id': 'MDQ6VXNlcjU3MzMxMTM0'} and 2019-11-03T21:15:07Z for username 'userahmedosman'
-    user_data, user_time = perf_counter(user_getter, GITHUB_USERNAME)
+    user_data, user_time = perf_counter(user_getter, USERNAME)
     OWNER_ID, acc_date = user_data
     formatter('account data', user_time)
     age_data, age_time = perf_counter(daily_readme, datetime.datetime(2002, 7, 5))
@@ -476,7 +476,7 @@ if __name__ == '__main__':
     star_data, star_time = perf_counter(graph_repos_stars, 'stars', ['OWNER'])
     repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
     contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
-    follower_data, follower_time = perf_counter(follower_getter, GITHUB_USERNAME)
+    follower_data, follower_time = perf_counter(follower_getter, USERNAME)
 
     # several repositories that I've contributed to have since been deleted.
     if OWNER_ID == {'id': 'MDQ6VXNlcjU3MzMxMTM0'}: # only calculate for user userahmedosman
