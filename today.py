@@ -23,7 +23,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(SCRIPT_DIR, 'cache')
 HEADERS = {'authorization': 'token ' + required_environment_variable('ACCESS_TOKEN')}
 USERNAME = required_environment_variable('USERNAME') # 'userahmedosman'
-QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
+QUERY_COUNT = {'user_getter': 0, 'follower_getter': 0, 'following_getter': 0, 'graph_repos_stars': 0, 'recursive_loc': 0, 'graph_commits': 0, 'loc_query': 0}
 
 
 def daily_readme(birthday):
@@ -346,7 +346,7 @@ def stars_counter(data):
     return total_stars
 
 
-def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, loc_data):
+def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib_data, follower_data, following_data, loc_data):
     """
     Parse SVG files and update elements with my age, commits, stars, repositories, and lines written
     """
@@ -357,6 +357,7 @@ def svg_overwrite(filename, age_data, commit_data, star_data, repo_data, contrib
     justify_format(root, 'repo_data', repo_data, 6)
     justify_format(root, 'contrib_data', contrib_data)
     justify_format(root, 'follower_data', follower_data, 10)
+    justify_format(root, 'following_data', following_data, 10)
     justify_format(root, 'loc_data', loc_data[2], 9)
     justify_format(root, 'loc_add', loc_data[0])
     justify_format(root, 'loc_del', loc_data[1], 7)
@@ -436,6 +437,23 @@ def follower_getter(username):
     request = simple_request(follower_getter.__name__, query, {'login': username})
     return int(request.json()['data']['user']['followers']['totalCount'])
 
+def following_getter(username):
+    """
+    Returns the number of accounts the user is following
+    """
+    query_count('following_getter')
+    query = '''
+    query($login: String!){
+        user(login: $login) {
+            following {
+                totalCount
+            }
+        }
+    }'''
+    request = simple_request(following_getter.__name__, query, {'login': username})
+    return int(request.json()['data']['user']['following']['totalCount'])
+
+
 
 def query_count(funct_id):
     """
@@ -486,7 +504,7 @@ if __name__ == '__main__':
     repo_data, repo_time = perf_counter(graph_repos_stars, 'repos', ['OWNER'])
     contrib_data, contrib_time = perf_counter(graph_repos_stars, 'repos', ['OWNER', 'COLLABORATOR', 'ORGANIZATION_MEMBER'])
     follower_data, follower_time = perf_counter(follower_getter, USERNAME)
-
+    following_data, following_time = perf_counter(following_getter, USERNAME)
     # several repositories that I've contributed to have since been deleted.
     if OWNER_ID == {'id': 'MDQ6VXNlcjU3MzMxMTM0'}: # only calculate for user userahmedosman
         archived_data = add_archive()
@@ -497,8 +515,8 @@ if __name__ == '__main__':
 
     for index in range(len(total_loc)-1): total_loc[index] = '{:,}'.format(total_loc[index]) # format added, deleted, and total LOC
 
-    svg_overwrite(os.path.join(SCRIPT_DIR, 'hajo_dark.svg'), age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
-    svg_overwrite(os.path.join(SCRIPT_DIR, 'hajo_light.svg'), age_data, commit_data, star_data, repo_data, contrib_data, follower_data, total_loc[:-1])
+    svg_overwrite(os.path.join(SCRIPT_DIR, 'hajo_dark.svg'), age_data, commit_data, star_data, repo_data, contrib_data, follower_data, following_data, total_loc[:-1])
+    svg_overwrite(os.path.join(SCRIPT_DIR, 'hajo_light.svg'), age_data, commit_data, star_data, repo_data, contrib_data, follower_data,following_data, total_loc[:-1])
 
     # move cursor to override 'Calculation times:' with 'Total function time:' and the total function time, then move cursor back
     print('\033[F\033[F\033[F\033[F\033[F\033[F\033[F\033[F',
