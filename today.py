@@ -51,14 +51,86 @@ def format_plural(unit):
     return 's' if unit != 1 else ''
 
 
+def _is_rate_limit_response(response):
+    """Return True if an HTTP 403/429 response indicates a GitHub rate limit."""
+    if response.status_code == 429:
+        return True
+    if response.status_code != 403:
+        return False
+    if response.headers.get('x-ratelimit-remaining') == '0':
+        return True
+    body = response.text.lower()
+    return 'rate limit' in body or 'abuse' in body or 'secondary' in body
+
+
+def _retry_delay_seconds(attempt, response=None):
+    """Compute bounded exponential backoff, honoring numeric Retry-After headers."""
+    if response is not None:
+        retry_after = response.headers.get('Retry-After')
+        if retry_after and retry_after.isdigit():
+            return min(max(int(retry_after), 1), 60)
+    return min(2 ** (attempt + 1), 32)
+
+
+def _post_graphql(func_name, query, variables, on_failure=None, max_attempts=5):
+    """
+    Execute a GitHub GraphQL POST request with retries and exponential backoff
+    for transient network, HTTP 5xx, and rate-limit errors.
+    """
+    last_response = None
+    last_error = None
+    for attempt in range(max_attempts):
+        try:
+            response = requests.post(
+                'https://api.github.com/graphql',
+                json={'query': query, 'variables': variables},
+                headers=HEADERS,
+                timeout=30,
+            )
+            last_response = response
+        except requests.exceptions.RequestException as exc:
+            last_error = exc
+            if attempt + 1 < max_attempts:
+                time.sleep(_retry_delay_seconds(attempt))
+                continue
+            if on_failure is not None:
+                on_failure()
+            raise Exception(func_name, 'has failed with network error:', str(exc), QUERY_COUNT) from exc
+
+        if response.status_code == 200:
+            payload = response.json()
+            # GitHub GraphQL can return HTTP 200 with {"errors": [...]} on transient timeouts/rate limits
+            if payload.get('data') is not None and not (payload.get('errors') and payload['data'].get('repository') is None and 'repository(' in query):
+                return response
+            last_error = payload.get('errors')
+            if attempt + 1 < max_attempts:
+                time.sleep(_retry_delay_seconds(attempt, response))
+                continue
+            if on_failure is not None:
+                on_failure()
+            raise Exception(func_name, 'has failed with GraphQL errors:', payload.get('errors'), QUERY_COUNT)
+
+        retryable = response.status_code in (429, 500, 502, 503, 504) or _is_rate_limit_response(response)
+        if retryable and attempt + 1 < max_attempts:
+            time.sleep(_retry_delay_seconds(attempt, response))
+            continue
+
+        if on_failure is not None:
+            on_failure()
+        if response.status_code == 403 and _is_rate_limit_response(response):
+            raise Exception('Too many requests in a short amount of time!\nYou\'ve hit the non-documented anti-abuse limit!')
+        raise Exception(func_name, 'has failed with a', response.status_code, response.text, QUERY_COUNT)
+
+    if on_failure is not None:
+        on_failure()
+    raise Exception(func_name, 'has failed after retries:', last_error or (last_response.status_code if last_response else 'unknown'), QUERY_COUNT)
+
+
 def simple_request(func_name, query, variables):
     """
     Returns a request, or raises an Exception if the response does not succeed.
     """
-    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS)
-    if request.status_code == 200:
-        return request
-    raise Exception(func_name, ' has failed with a', request.status_code, request.text, QUERY_COUNT)
+    return _post_graphql(func_name, query, variables)
 
 
 def graph_commits(start_date, end_date):
@@ -126,7 +198,6 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
     """
     Uses GitHub's GraphQL v4 API and cursor pagination to fetch 100 commits from a repository at a time
     """
-    query_count('recursive_loc')
     query = '''
     query ($repo_name: String!, $owner: String!, $cursor: String) {
         repository(name: $repo_name, owner: $owner) {
@@ -141,12 +212,13 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
                                         committedDate
                                     }
                                     author {
-                                        user {
-                                            id
+                                            user {
+                                                id
+                                            }
                                         }
+                                        deletions
+                                        additions
                                     }
-                                    deletions
-                                    additions
                                 }
                             }
                             pageInfo {
@@ -159,22 +231,30 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
             }
         }
     }'''
-    variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
-    request = requests.post('https://api.github.com/graphql', json={'query': query, 'variables':variables}, headers=HEADERS) # I cannot use simple_request(), because I want to save the file before raising Exception
-    if request.status_code == 200:
-        if request.json()['data']['repository']['defaultBranchRef'] != None: # Only count commits if repo isn't empty
-            return loc_counter_one_repo(owner, repo_name, data, cache_comment, request.json()['data']['repository']['defaultBranchRef']['target']['history'], addition_total, deletion_total, my_commits)
-        else: return 0
-    force_close_file(data, cache_comment) # saves what is currently in the file before this program crashes
-    if request.status_code == 403:
-        raise Exception('Too many requests in a short amount of time!\nYou\'ve hit the non-documented anti-abuse limit!')
-    raise Exception('recursive_loc() has failed with a', request.status_code, request.text, QUERY_COUNT)
+    while True:
+        query_count('recursive_loc')
+        variables = {'repo_name': repo_name, 'owner': owner, 'cursor': cursor}
+        request = _post_graphql(
+            recursive_loc.__name__,
+            query,
+            variables,
+            on_failure=lambda: force_close_file(data, cache_comment),
+        )
+        repo = request.json()['data']['repository']
+        if repo is None or repo.get('defaultBranchRef') is None: # Only count commits if repo isn't empty
+            return 0
+        history = repo['defaultBranchRef']['target']['history']
+        addition_total, deletion_total, my_commits = loc_counter_one_repo(
+            owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits
+        )
+        if not history['edges'] or not history['pageInfo']['hasNextPage']:
+            return addition_total, deletion_total, my_commits
+        cursor = history['pageInfo']['endCursor']
 
 
 def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, addition_total, deletion_total, my_commits):
     """
-    Recursively call recursive_loc (since GraphQL can only search 100 commits at a time) 
-    only adds the LOC value of commits authored by me
+    Counts additions, deletions, and commits authored by the owner in one page of GraphQL commit history.
     """
     for node in history['edges']:
         author = node.get('node', {}).get('author') if node and node.get('node') else None
@@ -183,19 +263,18 @@ def loc_counter_one_repo(owner, repo_name, data, cache_comment, history, additio
             addition_total += node['node']['additions']
             deletion_total += node['node']['deletions']
 
-    if history['edges'] == [] or not history['pageInfo']['hasNextPage']:
-        return addition_total, deletion_total, my_commits
-    else: 
-        return recursive_loc(owner, repo_name, data, cache_comment, addition_total, deletion_total, my_commits, history['pageInfo']['endCursor'])
+    return addition_total, deletion_total, my_commits
 
 
-def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None, edges=[]):
+def loc_query(owner_affiliation, comment_size=0, force_cache=False, cursor=None, edges=None):
     """
     Uses GitHub's GraphQL v4 API to query all the repositories I have access to (with respect to owner_affiliation)
     Queries 60 repos at a time, because larger queries give a 502 timeout error and smaller queries send too many
     requests and also give a 502 error.
     Returns the total number of lines of code in all repositories
     """
+    if edges is None:
+        edges = []
     query_count('loc_query')
     query = '''
     query ($owner_affiliation: [RepositoryAffiliation], $login: String!, $cursor: String) {
@@ -253,7 +332,7 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
 
     if len(data)-comment_size != len(edges) or force_cache: # If the number of repos has changed, or force_cache is True
         cached = False
-        flush_cache(edges, filename, comment_size)
+        flush_cache(edges, filename, comment_size, preserve_existing=not force_cache)
         with open(filename, 'r') as f:
             data = f.readlines()
 
@@ -280,19 +359,24 @@ def cache_builder(edges, comment_size, force_cache, loc_add=0, loc_del=0):
     return [loc_add, loc_del, loc_add - loc_del, cached]
 
 
-def flush_cache(edges, filename, comment_size):
+def flush_cache(edges, filename, comment_size, preserve_existing=False):
     """
-    Wipes the cache file
-    This is called when the number of repositories changes or when the file is first created
+    Rebuilds the cache file for the current repository list, optionally preserving existing cached entries.
     """
+    existing_entries = {}
     with open(filename, 'r') as f:
-        data = []
-        if comment_size > 0:
-            data = f.readlines()[:comment_size] # only save the comment
+        lines = f.readlines()
+    data = lines[:comment_size] if comment_size > 0 else []
+    if preserve_existing:
+        for line in lines[comment_size:]:
+            parts = line.split()
+            if len(parts) == 5:
+                existing_entries[parts[0]] = line if line.endswith('\n') else line + '\n'
     with open(filename, 'w') as f:
         f.writelines(data)
         for node in edges:
-            f.write(hashlib.sha256(node['node']['nameWithOwner'].encode('utf-8')).hexdigest() + ' 0 0 0 0\n')
+            repo_hash = hashlib.sha256(node['node']['nameWithOwner'].encode('utf-8')).hexdigest()
+            f.write(existing_entries.get(repo_hash, repo_hash + ' 0 0 0 0\n'))
 
 
 def add_archive():
