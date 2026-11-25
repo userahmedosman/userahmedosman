@@ -212,13 +212,12 @@ def recursive_loc(owner, repo_name, data, cache_comment, addition_total=0, delet
                                         committedDate
                                     }
                                     author {
-                                            user {
-                                                id
-                                            }
+                                        user {
+                                            id
                                         }
-                                        deletions
-                                        additions
                                     }
+                                    deletions
+                                    additions
                                 }
                             }
                             pageInfo {
